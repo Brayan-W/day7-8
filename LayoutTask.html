@@ -35,10 +35,35 @@
                 </ul>
             </div>
         </nav>
-        <div class="content"></div>
+        <div class="clearfix"></div>
+        <div class="content">
+            <div class="content-center">
+                <div class="row1">
+                        <div><p>This is Content 1 </p></div>
+                        <div><p>Maybe Content 2</p></div>
+                        <div>Content 3</div>
+                    </div>
+                    <div class="row2">
+                            <div>Content 4</div>
+                            <div>Content 5</div>
+                            <div>Content 6</div>
+                            <div>Content 7</div>
+                    </div>
+                    <div class="row3">
+                            <div>Content 8</div>
+                            <div>Content 9</div>
+                            <div>Content 10</div>
+                    </div>
+            </div>
+        </div>
     </div>
-    <footer></footer>
+    <footer>
+        <p>©2018 Baidu.com</p>
+    </footer>
     <style>
+        *, *::after, *::before {
+            margin:0; padding: 0;box-sizing: border-box;
+            }
         header{
             background-color: #333333;
             width: 100%;
@@ -106,6 +131,8 @@
             
         }
         .nav ul{
+            position: relative;
+            left: 0;
             list-style: none;
             background-color: aliceblue;
         }
@@ -126,6 +153,65 @@
             color: #000;
             text-decoration: none;
             margin-right: 0.5em;
+        }
+        .clearfix{
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+        .content {
+            width: 100%;
+        }
+
+        .content-center {
+            width: 960px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .content-center .row1{
+            display: flex;
+            flex-direction: row;
+            margin: 5px 0;
+            justify-content: center;
+            
+        }
+        .content-center .row1 div{
+            flex: 1;
+            border: #EEEEEE solid 1px;
+            margin: 0 5px;
+            height: 175px; 
+            justify-content: center;
+            align-items: center;
+        }
+        .content-center .row2 {
+            display: flex;
+            flex-direction: row;
+            margin: 5px 0;
+        }
+        .content-center .row2 div{
+            flex: 1;
+            border: #EEEEEE solid 1px;
+            margin: 0 5px;
+            height: 175px;
+        }
+        .content-center .row3 {
+            display: flex;
+            flex-direction: row;
+            margin: 5px 0;
+        }
+        .content-center .row3 div{
+            flex: 1;
+            border: #EEEEEE solid 1px;
+            margin: 0 5px;
+            height: 175px;
+        }
+
+        footer p{
+            text-align: center;
+            background-color: #666666;
+            width: 100%;
+            height: 40px;
         }
     </style>
 </body>
