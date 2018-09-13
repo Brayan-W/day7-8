@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ife任务，布局</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <p>Logo</p>
+            <ul>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="banner">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </div>
+    <div class="main">
+        <nav>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PROFILE</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content"></div>
+    </div>
+    <footer></footer>
+    <style>
+        header{
+            background-color: #333333;
+            width: 100%;
+            height: 60px;
+        }
+        .head {
+            width: 960px;
+            margin: 0 auto;
+        }
+        .head p{
+            display: block;
+            float: left;
+            color: white;
+            font-size: 20px;
+        }
+        .head ul{
+            list-style: none;
+            float: right;
+            margin-top: 5px;
+        }
+        .head ul li {
+            float: left;
+            margin-right: 1em;
+        }
+        .head li a{
+            color:white;
+            font-size: 14px;
+        }
+
+        .banner{
+            background-color: #66BB33;
+            height: 300px;
+            position: relative;
+        }
+        .banner ul{
+            float: right;
+            list-style: none;
+            margin: 0;
+            margin-top: 250px;
+            margin-right: 50px; 
+        }
+        .banner ul li{
+            width: 1.5em;
+            height: 1.5em;
+            float: left;
+            background-color:rgba(255, 255, 255, 0.5);
+            margin: 0 2px;
+            text-align: center;
+        }
+        .banner ul li:nth-child(2) {
+            background-color: aliceblue;
+            margin-top: -0.5em;
+            padding-top: 0.5em;
+        }
+        nav {
+            width: 100%;
+            border-bottom: #EEEEEE 1px solid;
+        }
+
+        .nav {
+            width: 960px;
+            margin: 0 auto;
+            height: 40px;
+            font-size: 16px;
+            
+        }
+        .nav ul{
+            list-style: none;
+            background-color: aliceblue;
+        }
+        .nav ul li {
+            float: left;
+            padding: 9px 12px;
+            border: #ddd solid 1px;
+            background-color: #EEE;
+            text-align: center;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        .nav ul li:nth-child(1){
+            background-color: #fff;
+            border-bottom: #fff solid 3px;
+        }
+        .nav ul li a{
+            color: #000;
+            text-decoration: none;
+            margin-right: 0.5em;
+        }
+    </style>
+</body>
+</html>
