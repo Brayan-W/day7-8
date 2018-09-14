@@ -39,20 +39,20 @@
         <div class="content">
             <div class="content-center">
                 <div class="row1">
-                        <div><p>This is Content 1 </p></div>
-                        <div><p>Maybe Content 2</p></div>
-                        <div>Content 3</div>
+                        <div class="item"><p>This is Content 1</p></div>
+                        <div class="item"><p>Maybe Content 2</p></div>
+                        <div class="item"><p>Content 3</p></div>
                     </div>
                     <div class="row2">
-                            <div>Content 4</div>
-                            <div>Content 5</div>
-                            <div>Content 6</div>
-                            <div>Content 7</div>
+                            <div class="item"><p>Content 4</p></div>
+                            <div class="item"><p>Content 5</p></div>
+                            <div class="item"><p>Content 6</p></div>
+                            <div class="item"><p>Content 7</p></div>
                     </div>
                     <div class="row3">
-                            <div>Content 8</div>
-                            <div>Content 9</div>
-                            <div>Content 10</div>
+                            <div class="item"><p>Content 8</p></div>
+                            <div class="item"><p>Content 9</p></div>
+                            <div class="item"><p>Content 10</p></div>
                     </div>
             </div>
         </div>
@@ -76,6 +76,7 @@
         .head p{
             display: block;
             float: left;
+            line-height: 60px;
             color: white;
             font-size: 20px;
         }
@@ -107,10 +108,11 @@
         }
         .banner ul li{
             width: 1.5em;
-            height: 1.5em;
+            line-height: 35px;
             float: left;
             background-color:rgba(255, 255, 255, 0.5);
             margin: 0 2px;
+            vertical-align: bottom;
             text-align: center;
         }
         .banner ul li:nth-child(2) {
@@ -147,7 +149,7 @@
         }
         .nav ul li:nth-child(1){
             background-color: #fff;
-            border-bottom: #fff solid 3px;
+            border-bottom: #fff solid 1px;
         }
         .nav ul li a{
             color: #000;
@@ -173,40 +175,61 @@
             display: flex;
             flex-direction: row;
             margin: 5px 0;
-            justify-content: center;
+            justify-content: space-between;
             
         }
-        .content-center .row1 div{
+        .content-center .row1 .item{
             flex: 1;
             border: #EEEEEE solid 1px;
             margin: 0 5px;
             height: 175px; 
-            justify-content: center;
-            align-items: center;
+            line-height: 175px;
+            text-align: center;
+        }
+        .content-center .row1 .item:nth-child(1){
+            margin-left: 0;
+        }
+        .content-center .row1 .item:nth-last-child(1){
+            margin-right: 0;
         }
         .content-center .row2 {
             display: flex;
             flex-direction: row;
             margin: 5px 0;
         }
-        .content-center .row2 div{
+        .content-center .row2 .item{
             flex: 1;
             border: #EEEEEE solid 1px;
             margin: 0 5px;
             height: 175px;
+            line-height: 175px;
+            text-align: center;
+        }
+        .content-center .row2 .item:nth-child(1){
+            margin-left: 0;
+        }
+        .content-center .row2 .item:nth-last-child(1){
+            margin-right: 0;
         }
         .content-center .row3 {
             display: flex;
             flex-direction: row;
             margin: 5px 0;
         }
-        .content-center .row3 div{
+        .content-center .row3 .item{
             flex: 1;
             border: #EEEEEE solid 1px;
             margin: 0 5px;
             height: 175px;
+            line-height: 175px;
+            text-align: center;
         }
-
+        .content-center .row3 .item:nth-child(1){
+            margin-left: 0;
+        }
+        .content-center .row3 .item:nth-last-child(1){
+            margin-right: 0;
+        }
         footer p{
             text-align: center;
             background-color: #666666;
